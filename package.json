@@ -10,6 +10,10 @@
     "browserify": "^11.0.1",
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.1",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.9",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6",
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
@@ -18,5 +22,8 @@
     "body-parser": "^1.13.3",
     "express": "^4.13.3",
     "firebase": "^2.2.9"
+  },
+  "scripts": {
+    "test": "node_modules/karma/bin/karma start karma.conf.js"
   }
 }
