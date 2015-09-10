@@ -1,0 +1,22 @@
+{
+  "name": "rpsls",
+  "version": "0.1.0",
+  "description": "Rock Paper Spock Lizard Scissor online game",
+  "main": "index.js",
+  "author": "Tanawat Tassana <amp.tanawat@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.0.1",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "angular": "^1.4.5",
+    "angularfire": "^1.1.2",
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "firebase": "^2.2.9"
+  }
+}
