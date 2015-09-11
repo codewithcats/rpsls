@@ -18,6 +18,11 @@ gulp.task('html-client', function() {
     .pipe(gulp.dest('dist/server/static/'));
 });
 
+gulp.task('css', function() {
+  return gulp.src('node_modules/angular-material/angular-material.css')
+  .pipe(gulp.dest('dist/server/static'));
+});
+
 gulp.task('js-client', function() {
   return jsBundle({
     index: 'rpsls-client/index.js',
@@ -33,16 +38,6 @@ gulp.task('core-spec', function() {
     index: 'specs/rpsls/index.js',
     output: {
       file: 'core-spec.js',
-      dir: 'specs/bundles/'
-    }
-  });
-});
-
-gulp.task('client-spec', function() {
-  return jsBundle({
-    index: 'specs/rpsls-client/index.js',
-    output: {
-      file: 'client-spec.js',
       dir: 'specs/bundles/'
     }
   });
