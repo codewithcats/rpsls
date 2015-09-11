@@ -22,3 +22,9 @@ gulp.task('core-spec', function() {
     }
   });
 });
+
+gulp.task('js-server', function() {
+  return gulp.src('./rpsls-server/server.js')
+    .pipe(gulpBabel())
+    .pipe(gulp.dest('./dist/server/'));
+});
