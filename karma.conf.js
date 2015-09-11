@@ -15,7 +15,10 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'specs/bundles/**/*.js'
+      'dist/server/static/client.js',
+      'node_modules/angular-mocks/angular-mocks.js',
+      'specs/bundles/**/*.js',
+      'specs/rpsls-client/**/*.js'
     ],
 
 

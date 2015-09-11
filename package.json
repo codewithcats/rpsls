@@ -6,6 +6,7 @@
   "author": "Tanawat Tassana <amp.tanawat@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "angular-mocks": "^1.4.5",
     "babelify": "^6.3.0",
     "browser-sync": "^2.9.3",
     "browserify": "^11.0.1",

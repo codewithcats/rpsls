@@ -17,6 +17,16 @@ app.post('/register', (req, resp) => {
   });
 });
 
+app.post('/logoff', (req, resp) => {
+  let {id} = req.body,
+    usersRef = new Firebase(`https://rpslsonline.firebaseio.com/users/${id}`);
+    console.log('Player log off -- id: ', id);
+    usersRef.remove({name}, (err) => {
+      if(err) resp.sendStatus(500);
+      else resp.sendStatus(200);
+    });
+});
+
 let server = app.listen(3000, () => {
   let {address, port} = server.address();
   console.log(`RPSLS server is running at ${address}:${port}`);
