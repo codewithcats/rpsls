@@ -4,8 +4,15 @@ import './user/module';
 
 let client = angular.module('rpsls.client', [
   'rpsls.client.lib',
-  'rpsls.client.user'
+  'rpsls.client.user',
+  'ngMaterial'
 ]);
+
+client.config(['$mdThemingProvider', function($mdThemingProvider) {
+  $mdThemingProvider.theme('default')
+    .primaryPalette('deep-orange')
+    .accentPalette('grey');
+}]);
 
 client.controller('registerController', [
   '$http',

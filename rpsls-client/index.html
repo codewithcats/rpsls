@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="angular-material.css">
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>RPSLS online game</title>
+    <title>RPSLS online</title>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,6 +17,13 @@
     <![endif]-->
   </head>
   <body ng-app="rpsls.client">
+    <section class="content">
+      <md-content>
+        <md-toolbar>
+          <h2>Rock Paper Scissor Lizard Spock</h2>
+        </md-toolbar>
+      </md-content>
+    </section>
     <ul ng-controller="userListController as ctrl" ng-init="ctrl.init()">
       <li ng-repeat="user in ctrl.users">{{user.name}}</li>
     </ul>
