@@ -12,3 +12,13 @@ function jsBundle(options) {
     .pipe(source(options.output.file))
     .pipe(gulp.dest(options.output.dir));
 }
+
+gulp.task('core-spec', function() {
+  return jsBundle({
+    index: 'specs/rpsls/index.js',
+    output: {
+      file: 'core-spec.js',
+      dir: 'specs/bundles/'
+    }
+  });
+});
